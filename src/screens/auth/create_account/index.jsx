@@ -7,7 +7,6 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Alert,
 } from 'react-native';
 import React, { useState } from 'react';
 import BestTransFer from '@/assets/svg/CreateAcc/Best_TransFer.svg';
@@ -18,7 +17,6 @@ import { Constants } from './constants';
 import TextInputField from '@/components/input/TextInput';
 import { validateEmail } from '@/utils/validations';
 import { ErrorFlash } from '@/utils/flashMessage';
-import PhoneNumberInput from '@/components/input/PhoneNumberInput';
 import NumberInput from '@/components/input/NumberInput';
 import { DefaultConstants } from '@/utils/Constants';
 import { StackActions } from '@react-navigation/native';
@@ -108,7 +106,7 @@ const CreateAccount = ({ navigation }) => {
       }
       else {
         setLoading(false)
-        ErrorFlash(resp[1].response.data.detail);
+        ErrorFlash(resp[1]);
       }
 
     }
@@ -325,14 +323,14 @@ export default CreateAccount;
 
 const numberData = [
   {
-    label: 'India',
-    image: 'https://cdn.pixabay.com/photo/2016/03/09/19/24/flag-1247218_640.jpg',
+    label: 'UK',
+    image: 'https://fxmaster.co.uk/flags/UK.png',
     value: '+44',
   },
 ];
 
 const defaultValue = {
   label: 'UK',
-  image: 'https://cdn.pixabay.com/photo/2016/03/09/19/24/flag-1247218_640.jpg',
+  image: 'https://fxmaster.co.uk/flags/UK.png',
   value: '+44',
 };

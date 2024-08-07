@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
   imgBackground: {
     position: 'absolute',
     zIndex: -1,
-    resizeMode: 'cover',
+    resizeMode: 'stretch',
     width: wp(100),
     height: hp(100),
   },
@@ -52,7 +52,7 @@ export const styles = StyleSheet.create({
   },
   common_container: {
     width: wp(43),
-    height: hp(5),
+    height: hp(3),
     borderRadius: hp(1),
     // borderWidth: 1,
     alignItems: 'center',

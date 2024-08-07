@@ -1,15 +1,12 @@
 import React, { useRef, useState } from 'react';
-import { View, Text, TextStyle, StyleProp, Animated, TextInput, Image } from 'react-native';
+import { View, Text, Animated, TextInput, Image } from 'react-native';
 import { Dropdown } from 'react-native-element-dropdown';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { styles } from './styles';
 import { ColorSheet } from '../../../utils/ColorSheet';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {
-  heightPercentageToDP as hp,
-  widthPercentageToDP as wp,
-} from 'react-native-responsive-screen';
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import PropTypes from 'prop-types';
 
 const NumberInput = (props) => {
@@ -70,7 +67,7 @@ const NumberInput = (props) => {
           },
         ]}
       >
-        {customRightIcon?.() ?? <Entypo name='chevron-down' size={20} color={ColorSheet.Primary} />}
+        {/* {customRightIcon?.() ?? <Entypo name='chevron-down' size={20} color={ColorSheet.Primary} />} */}
       </Animated.View>
     );
   };
@@ -123,7 +120,7 @@ const NumberInput = (props) => {
         }}
         labelField='value'
         valueField='label'
-        placeholder={''}
+        placeholder={'+44'}
         value={valueItem.label}
         onChange={onChangeValue}
         renderItem={renderItem}
@@ -141,6 +138,7 @@ const NumberInput = (props) => {
         keyboardType='number-pad'
         value={valueNumber}
         onChangeText={onChangeNumber}
+        maxLength={10}
       />
     </View>
   );

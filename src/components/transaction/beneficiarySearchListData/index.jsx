@@ -10,7 +10,7 @@ const BeneficiarySearchListData = (props) => {
     <View style={styles.container}>
       {/* Image */}
       {imgSource ? (
-        <Image style={styles.imageStyle} source={imgSource} />
+        <Image style={styles.imageStyle} source={require('@/assets/images/user-profile.jpg')} />
       ) : (
         <View style={styles.placeholderImageStyle}>
           <Text style={styles.placeholderText}>{name.charAt(0).toUpperCase()}</Text>
@@ -26,7 +26,7 @@ const BeneficiarySearchListData = (props) => {
           {' '}
           {idNumber}
           {/* SBIN Number */}
-          <Text style={styles.numberTxt}> ({sBinNumber}) </Text>
+          <Text style={styles.numberTxt}> {sBinNumber ? '('+sBinNumber+')' : ""} </Text>
         </Text>
       </View>
     </View>

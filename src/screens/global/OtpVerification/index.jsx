@@ -11,8 +11,6 @@ import {
 import React, { useEffect, useState } from 'react';
 import { ColorSheet } from '@/utils/ColorSheet';
 import { styles } from './styles';
-import PrimaryDropDown from '@/components/dropdowns/primary_dropdown';
-import NumberInput from '@/components/input/NumberInput';
 import OTPInput from '@/components/input/OTPInput';
 import { Constants } from './constants';
 import PrimaryButton from '@/components/buttons/primaryButton';
@@ -75,15 +73,6 @@ const OtpVerification = ({ navigation }) => {
       else
       {
         ErrorFlash(otpvalidateresp[1])
-        
-        var otpresp = await postRequest(DefaultConstants.BASE_URL + 'otp/validate-email', { source: DefaultConstants.SOURCE_NAME }, {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + token
-          }
-        });
-        navigation.dispatch(StackActions.replace('EmailOtpVerificationScreen'));
-
       }
       setLoading(false)
     }
