@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import {
   heightPercentageToDP as hp,
@@ -22,12 +22,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: ColorSheet.ActiveInputBorder,
   },
-  imgStyle: {
-    width: wp(10),
-    height: wp(10),
-    marginRight: hp(2),
-    resizeMode: 'contain',
-  },
   titleInputContainer: {
     flex: 1,
     flexDirection: 'column',
@@ -40,7 +34,7 @@ export const styles = StyleSheet.create({
   textInput: {
     fontSize: RFValue(14),
     color: ColorSheet.Text0,
-    paddingVertical: wp(1),
+    paddingVertical: Platform.OS == 'android' ? 0 : wp(1),
     fontWeight: '500',
   },
   placeholderTxt: {
