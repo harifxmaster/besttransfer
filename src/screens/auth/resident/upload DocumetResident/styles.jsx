@@ -42,15 +42,18 @@ export const styles = StyleSheet.create({
     // flexDirection: 'row',
   },
   progressBarContainer: {
-    width: wp(80),
+    width: wp(85),
     flexDirection: 'row',
     alignSelf: 'center',
     alignItems: 'center',
-    // justifyContent: 'center',
+    justifyContent: 'center',
+    marginTop: hp(1),
     // backgroundColor: 'red',
   },
   backIcon: {
     marginRight: hp(1),
+    position: 'absolute',
+    left: 0,
   },
   subTitleContainer: {
     marginTop: hp(0.5),

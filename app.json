@@ -2,7 +2,7 @@
   "expo": {
     "name": "FX Master",
     "slug": "fx-master",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
     "scheme": "myapp",
@@ -15,7 +15,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.codelantic2023.fxmaster"
+      "bundleIdentifier": "com.codelantic2023.fxmaster",
+      "buildNumber": "1.0.1"
     },
     "android": {
       "adaptiveIcon": {
