@@ -42,4 +42,5 @@ export const ColorSheet = {
   Dot: '#D9D9D9',
   DataBoxColor: '#D6D6D6',
   StatusBar: '#002647',
+  UploadViewColor: '#EFF1F0',
 };

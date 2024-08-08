@@ -38,8 +38,6 @@ const EditTextInput = (props) => {
           containerStyle,
         ]}
       >
-        {/* Image */}
-        {imageSource && <Image source={imageSource} style={styles.imgStyle} />}
 
         <View style={styles.titleInputContainer}>
           {/* TextInput */}

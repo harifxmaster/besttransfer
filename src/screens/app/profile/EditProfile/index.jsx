@@ -38,7 +38,7 @@ const EditProfile = ({ navigation }) => {
         style={styles.titleHeaderContainer}
         title={Constants.HEADER_TITLE}
         onPressBack={() => {
-          console.log('onPressBack');
+          navigation.goBack();
         }}
         onPressHome={() => {
           console.log('onPressHome');

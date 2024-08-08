@@ -1,4 +1,6 @@
 export const Constants = {
+  HEADER_TITLE: 'Create an account',
+
   PERSONAL_TXT: 'Personal',
   BUSINESS_TXT: 'Business',
 

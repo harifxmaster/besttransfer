@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import {
   heightPercentageToDP as hp,
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   },
   titleName: {
     fontSize: RFValue(14),
-    paddingVertical: wp(1),
+    paddingVertical: Platform.OS == 'android' ? wp(0) : wp(1),
     color: ColorSheet.Text41,
   },
   textInput: {

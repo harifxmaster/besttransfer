@@ -150,7 +150,7 @@ const UploadDocumentResident = ({ navigation }) => {
                 />
               ) : (
                 <>
-                  <Entypo name='upload-to-cloud' color={ColorSheet.UploadIcon} size={35} />
+                  <Entypo name='upload-to-cloud' color={ColorSheet.UploadIcon} size={38} />
 
                   <TouchableOpacity onPress={pickImage} activeOpacity={0.5}>
                     <Text style={styles.clickToUpload}> {Constants.CLICK_UPLOAD} </Text>

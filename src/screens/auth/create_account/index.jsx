@@ -91,7 +91,7 @@ const CreateAccount = ({ navigation }) => {
         {/* Main Container */}
         <View style={styles.main_container}>
           {/* Header Title */}
-          <Text style={styles.titleText}> Create an Account </Text>
+          <Text style={styles.titleText}> {Constants.HEADER_TITLE} </Text>
 
           {/* User Choose Personal Or Business */}
           <View style={styles.row_bg_container}>

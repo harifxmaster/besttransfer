@@ -21,13 +21,13 @@ export const styles = StyleSheet.create({
   main_view_Container: {
     // width: '100%',
     margin: hp(2),
-    marginTop: Platform.OS == 'android' ? hp(10) : hp(2),
+    marginTop: Platform.OS == 'android' ? hp(4) : hp(2),
     alignSelf: 'center',
     // justifyContent: 'center',
     // backgroundColor: 'pink',
   },
   logoContainer: {
-    paddingTop: hp(2),
+    paddingTop: hp(1),
     alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: {
@@ -42,14 +42,18 @@ export const styles = StyleSheet.create({
     // flexDirection: 'row',
   },
   progressBarContainer: {
+    width: wp(80),
     flexDirection: 'row',
     alignSelf: 'center',
     alignItems: 'center',
     // justifyContent: 'center',
     // backgroundColor: 'red',
   },
+  backIcon: {
+    marginRight: hp(1),
+  },
   subTitleContainer: {
-    marginTop: hp(1),
+    marginTop: hp(0.5),
     alignItems: 'center',
     // justifyContent: 'center',
   },
@@ -61,18 +65,20 @@ export const styles = StyleSheet.create({
   },
   dropDownStyle: {
     width: wp(90),
-    marginTop: hp(2),
+    marginTop: hp(1.5),
   },
   selectImgContainer: {
     width: wp(90),
-    height: Platform.OS == 'android' ? hp(20) : hp(16),
-    marginTop: hp(3),
+    height: Platform.OS == 'android' ? hp(19) : hp(19),
+    marginTop: hp(2.5),
     // marginBottom: hp(4),
     padding: hp(1),
     justifyContent: 'center',
     alignItems: 'center',
     borderStyle: 'dashed',
-    borderWidth: 1,
+    borderRadius: hp(1),
+    backgroundColor: ColorSheet.UploadViewColor,
+    borderWidth: 0.5,
   },
   selectBorder_Close_Container: {
     width: wp(36),
@@ -96,7 +102,7 @@ export const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   we_donot_accpet: {
-    marginTop: hp(3),
+    marginTop: hp(2),
   },
   acceptTxt: {
     paddingBottom: hp(1),
@@ -105,13 +111,13 @@ export const styles = StyleSheet.create({
     color: ColorSheet.Primary,
   },
   clickToUpload: {
-    paddingTop: hp(0.5),
+    paddingTop: hp(1),
     fontSize: RFValue(13),
     fontWeight: '600',
     color: ColorSheet.UrlTextColor,
   },
   jpg_pdf_txt: {
-    paddingTop: hp(0.5),
+    paddingTop: hp(1),
     fontSize: RFValue(13),
     fontWeight: '600',
     color: ColorSheet.ImageJPG,

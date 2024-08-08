@@ -18,6 +18,9 @@ export const styles = StyleSheet.create({
     paddingHorizontal: wp(2),
     paddingVertical: hp(1),
   },
+  icon: {
+    marginRight: hp(1)
+  },
   title_txt: {
     fontSize: RFValue(16),
     color: ColorSheet.PrimaryButtonTxt,

@@ -17,6 +17,7 @@ import CurrencyCoveter from '@/components/transaction/currency_convater';
 
 import ImageSlider from '@/components/image_slider';
 import { useNavigation } from '@react-navigation/native';
+import { ColorSheet } from '@/utils/ColorSheet';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -78,6 +79,8 @@ const HomeScreen = () => {
           <DashedBorder height={2} style={styles.dashedBorder} />
 
           <SecondaryButton
+            textStyle = {styles.btnTextStyle}
+            iconColor='#fff' // Ensuring white color is passed correctly
             title={Constants.SEND}
             onPress={() => {
               navigation.navigate('TransferEnterAmountScreen');

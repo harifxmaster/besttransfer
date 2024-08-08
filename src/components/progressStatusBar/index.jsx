@@ -3,6 +3,10 @@ import * as Progress from 'react-native-progress';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ColorSheet } from '@/utils/ColorSheet';
+import {
+  heightPercentageToDP as hp,
+  widthPercentageToDP as wp,
+} from 'react-native-responsive-screen';
 
 const ProgressStatusBar = (props) => {
   const { progress1, progress2, progress3 } = props;
@@ -58,6 +62,7 @@ export default ProgressStatusBar;
 const styles = StyleSheet.create({
   container: {
     width: '70%',
+    gap: hp(1),
     flexDirection: 'row',
     justifyContent: 'space-between',
     // backgroundColor: 'red',

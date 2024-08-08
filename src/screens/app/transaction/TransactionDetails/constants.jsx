@@ -1,5 +1,5 @@
 export const Constants = {
-  HEADER_TITLE: 'Transactions',
+  HEADER_TITLE: 'Transactions Details',
 
   PAYMENT_SUCCESS: 'Payment Success!',
   TOTAL_PAYMENT: 'Total Payment',

@@ -65,8 +65,8 @@ export const styles = StyleSheet.create({
   },
   textAmount: {
     fontSize: RFValue(14),
-    fontWeight: '500',
-    color: ColorSheet.Primary,
+    fontWeight: '600',
+    color: ColorSheet.PrimaryTxt,
   },
   btnContainer: {
     width: '100%',

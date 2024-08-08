@@ -53,6 +53,9 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     // backgroundColor: 'red'
   },
+  btnTextStyle:{
+    color: ColorSheet.Secondary,
+  },
   feesTotalPaymentContainer: {
     marginVertical: hp(2),
     flexDirection: 'row',
