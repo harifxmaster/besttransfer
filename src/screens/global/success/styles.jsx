@@ -14,9 +14,10 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   lottie_txt_container: {
-    width: wp(55),
+    // width: wp(55),
     marginTop: Platform.OS == 'ios' ? hp(20) : hp(30),
     alignItems: 'center',
+    // backgroundColor: 'red'
   },
   lottieStyle: {
     width: wp(40),
@@ -26,6 +27,7 @@ export const styles = StyleSheet.create({
     fontSize: RFValue(15),
     fontWeight: '800',
     color: ColorSheet.SuccessTxt,
+    textAlign: 'center',
   },
 
   buttonStyle: {

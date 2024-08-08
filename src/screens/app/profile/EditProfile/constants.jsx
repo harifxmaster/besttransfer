@@ -7,5 +7,5 @@ export const Constants = {
   COUNTRY_RESIDENCE: 'Country of residence',
   NATIONALITY: 'Nationality',
 
-  SAVE_CHANGE: 'Save Change',
+  SAVE_CHANGE: 'Save Changes',
 };

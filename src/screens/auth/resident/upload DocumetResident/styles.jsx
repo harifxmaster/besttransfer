@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     // backgroundColor: 'pink',
   },
   logoContainer: {
-    paddingTop: hp(2),
+    paddingTop: hp(1),
     alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: {
@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     // backgroundColor: 'red',
   },
   subTitleContainer: {
-    marginTop: hp(1),
+    marginTop: hp(0.5),
     alignItems: 'center',
     // justifyContent: 'center',
   },
@@ -61,17 +61,19 @@ export const styles = StyleSheet.create({
   },
   dropDownStyle: {
     width: wp(90),
-    marginTop: hp(2),
+    marginTop: hp(1.5),
   },
   selectImgContainer: {
     width: wp(90),
-    height: Platform.OS == 'android' ? hp(20) : hp(16),
-    marginTop: hp(3),
+    height: Platform.OS == 'android' ? hp(22) : hp(20),
+    marginTop: hp(2.5),
     // marginBottom: hp(4),
     padding: hp(1),
     justifyContent: 'center',
     alignItems: 'center',
     borderStyle: 'dashed',
+    borderRadius: hp(1),
+    backgroundColor: ColorSheet.UploadViewColor,
     borderWidth: 1,
   },
   selectBorder_Close_Container: {
@@ -96,7 +98,7 @@ export const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   we_donot_accpet: {
-    marginTop: hp(3),
+    marginTop: hp(2),
   },
   acceptTxt: {
     paddingBottom: hp(1),
@@ -105,13 +107,13 @@ export const styles = StyleSheet.create({
     color: ColorSheet.Primary,
   },
   clickToUpload: {
-    paddingTop: hp(0.5),
+    paddingTop: hp(1),
     fontSize: RFValue(13),
     fontWeight: '600',
     color: ColorSheet.UrlTextColor,
   },
   jpg_pdf_txt: {
-    paddingTop: hp(0.5),
+    paddingTop: hp(1),
     fontSize: RFValue(13),
     fontWeight: '600',
     color: ColorSheet.ImageJPG,

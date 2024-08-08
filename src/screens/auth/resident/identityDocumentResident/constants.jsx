@@ -10,7 +10,7 @@ export const Constants = {
 
   VERIFICATION_TYPE_LABEL: 'Verification Type',
 
-  VerificationType: ['Driver’s Licences', 'Id Card', 'Residence Permit', 'Passport'],
+  VerificationType: ['Driver’s Licence', 'Id Card', 'Residence Permit', 'Passport'],
 
   CONTINUE: 'Continue',
 };

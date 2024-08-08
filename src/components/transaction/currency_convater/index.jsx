@@ -71,7 +71,7 @@ const CurrencyCoveter = (props) => {
         <AnimatedTextInput
           onChangeText={onChangeReceivingAmount}
           value={receivingAmountValue}
-          placeholder={'Reiving Amount'}
+          placeholder={'Recieving Amount'}
         />
 
         <View style={styles.selectCurrencyView}>
