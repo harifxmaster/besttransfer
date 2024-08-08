@@ -4,6 +4,7 @@ import { styles } from './styles';
 import { ColorSheet } from '../../../utils/ColorSheet';
 import PropTypes from 'prop-types';
 import Octicons from 'react-native-vector-icons/Octicons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useUpdateEffect } from '@/utils/useUpdateEffect';
 
 const TextInputField = (props) => {
@@ -61,7 +62,7 @@ const TextInputField = (props) => {
           keyboardType={keyboardType}
           onBlur={onBlur}
           onChangeText={onChangeText}
-          secureTextEntry={secureText}
+          secureTextEntry={secureText && !showPassword}
           editable={editable}
           autoCapitalize={autoCapitalize}
           maxLength={maxLength}
@@ -69,9 +70,9 @@ const TextInputField = (props) => {
         {secureTextEntry && !disableEyeIcon && (
           <TouchableOpacity style={styles.icon} onPress={() => setShowPassword(!showPassword)}>
             {showPassword ? (
-              <Octicons name='eye-closed' size={20} color={ColorSheet.TextInputPlaceholderColor} />
+              <Ionicons name='eye-outline' size={28} color={ColorSheet.TextInputPlaceholderColor} />
             ) : (
-              <Octicons name='eye' size={20} color={ColorSheet.TextInputPlaceholderColor} />
+              <Ionicons name='eye-off-outline' size={28} color={ColorSheet.TextInputPlaceholderColor} />
             )}
           </TouchableOpacity>
         )}

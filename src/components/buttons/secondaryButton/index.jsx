@@ -14,7 +14,7 @@ const SecondaryButton = (props) => {
       <FontAwesome 
         name='send' 
         size={20} 
-        color={ColorSheet.PrimaryButtonTxt || iconColor} 
+        color = {iconColor || ColorSheet.PrimaryButtonTxt}  
         style = {[styles.icon]}
       />
 

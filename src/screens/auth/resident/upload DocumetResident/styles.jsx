@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
   main_view_Container: {
     // width: '100%',
     margin: hp(2),
-    marginTop: Platform.OS == 'android' ? hp(10) : hp(2),
+    marginTop: Platform.OS == 'android' ? hp(4) : hp(2),
     alignSelf: 'center',
     // justifyContent: 'center',
     // backgroundColor: 'pink',
@@ -42,11 +42,15 @@ export const styles = StyleSheet.create({
     // flexDirection: 'row',
   },
   progressBarContainer: {
+    width: wp(80),
     flexDirection: 'row',
     alignSelf: 'center',
     alignItems: 'center',
     // justifyContent: 'center',
     // backgroundColor: 'red',
+  },
+  backIcon: {
+    marginRight: hp(1),
   },
   subTitleContainer: {
     marginTop: hp(0.5),
@@ -65,7 +69,7 @@ export const styles = StyleSheet.create({
   },
   selectImgContainer: {
     width: wp(90),
-    height: Platform.OS == 'android' ? hp(22) : hp(20),
+    height: Platform.OS == 'android' ? hp(19) : hp(19),
     marginTop: hp(2.5),
     // marginBottom: hp(4),
     padding: hp(1),
@@ -74,7 +78,7 @@ export const styles = StyleSheet.create({
     borderStyle: 'dashed',
     borderRadius: hp(1),
     backgroundColor: ColorSheet.UploadViewColor,
-    borderWidth: 1,
+    borderWidth: 0.5,
   },
   selectBorder_Close_Container: {
     width: wp(36),

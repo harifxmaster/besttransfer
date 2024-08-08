@@ -80,7 +80,7 @@ const HomeScreen = () => {
 
           <SecondaryButton
             textStyle = {styles.btnTextStyle}
-            iconColor = '#fff'
+            iconColor='#fff' // Ensuring white color is passed correctly
             title={Constants.SEND}
             onPress={() => {
               navigation.navigate('TransferEnterAmountScreen');
