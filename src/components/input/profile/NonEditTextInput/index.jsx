@@ -9,6 +9,7 @@ const NonEditTextInput = (props) => {
     style,
     containerStyle,
     textInputField,
+    titleNameStyle,
     imageSource,
     placeholder,
     title,
@@ -41,7 +42,7 @@ const NonEditTextInput = (props) => {
 
         <View style={styles.titleInputContainer}>
           {/* Title */}
-          <Text style={styles.titleName}>{title}</Text>
+          <Text style={[styles.titleName, titleNameStyle]}>{title}</Text>
           {/* TextInput */}
           <TextInput
             style={[styles.textInput, textInputField]}
@@ -70,6 +71,7 @@ const NonEditTextInput = (props) => {
 NonEditTextInput.propTypes = {
   style: PropTypes.object,
   containerStyle: PropTypes.object,
+  titleNameStyle: PropTypes.object,
   imageSource: PropTypes.object,
   textInputField: PropTypes.object,
   placeholder: PropTypes.string,
