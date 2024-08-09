@@ -70,9 +70,10 @@ const ResidentIdentityDocument = ({ navigation }) => {
         >
           {/* Logo Image  */}
           <View style={styles.main_container}>
-            <View style={styles.logo_image}>
-              <LogoResident width={90} height={90} />
-            </View>
+            <Image
+              source={require('@/assets/images/resident/residentLogo.png')}
+              style={styles.logo_image}
+            />
 
             {/* Progress Bar */}
             <View style={styles.statusStyleContainer}>

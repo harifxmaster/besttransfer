@@ -103,9 +103,10 @@ const UploadDocumentResident = ({ navigation }) => {
         >
           <View style={styles.main_view_Container}>
             {/* Header Logo */}
-            <View style={styles.logoContainer}>
-              <LogoResident width={100} height={100} />
-            </View>
+            <Image
+              source={require('@/assets/images/resident/residentLogo.png')}
+              style={styles.logo_image}
+            />
 
             {/* Back And Progress Bar */}
             <View style={styles.progressBarContainer}>

@@ -27,8 +27,11 @@ export const styles = StyleSheet.create({
     // backgroundColor: 'pink',
   },
   logo_image: {
-    paddingTop: hp(2),
-    alignItems: 'center',
+    alignSelf: 'center',
+    borderRadius: 100,
+    resizeMode: 'stretch',
+    width: wp(28),
+    height: wp(28),
     shadowColor: '#000',
     shadowOffset: {
       width: 0,

@@ -38,9 +38,10 @@ const ResidentCountry = ({ navigation }) => {
         >
           {/* Logo Image  */}
           <View style={styles.main_container}>
-            <View style={styles.logo_image}>
-              <LogoResident width={130} height={130} />
-            </View>
+            <Image
+              source={require('@/assets/images/resident/residentLogo.png')}
+              style={styles.logo_image}
+            />
 
             {/*  Main Text */}
             <View style={styles.textContainer}>

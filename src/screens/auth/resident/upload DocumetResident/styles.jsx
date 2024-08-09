@@ -26,9 +26,13 @@ export const styles = StyleSheet.create({
     // justifyContent: 'center',
     // backgroundColor: 'pink',
   },
-  logoContainer: {
-    paddingTop: hp(1),
-    alignItems: 'center',
+  logo_image: {
+    marginTop: Platform.OS == 'android' ? hp(3) : 0,
+    alignSelf: 'center',
+    borderRadius: 100,
+    resizeMode: 'stretch',
+    width: wp(28),
+    height: wp(28),
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
