@@ -1,3 +1,4 @@
+import { ColorSheet } from '@/utils/ColorSheet';
 import { Platform, StyleSheet } from 'react-native';
 import {
   heightPercentageToDP as hp,
@@ -39,6 +40,14 @@ export const styles = StyleSheet.create({
     width: wp(100),
     // paddingBottom: Platform.OS == 'ios' ? hp(5) : hp(5),
     // backgroundColor: 'red',
+  },
+  titleNameStyle: {
+    color: ColorSheet.Text0,
+    fontWeight: '500',
+  },
+  textInputField: {
+    fontWeight: '400',
+    color: ColorSheet.Text41,
   },
   btnContainer: {
     width: '93%',

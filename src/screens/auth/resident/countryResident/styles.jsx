@@ -60,7 +60,6 @@ export const styles = StyleSheet.create({
   },
   urlTextContainer: {
     width: wp(68),
-    justifyContent: 'center',
     marginVertical: hp(1), // Vertical spacing around URL text
     // backgroundColor: 'red',
   },

@@ -94,6 +94,8 @@ const EditProfile = ({ navigation }) => {
 
             {/* Country of residence */}
             <NonEditTextInput
+              titleNameStyle = {styles.titleNameStyle}
+              textInputField = {styles.textInputField}
               title={Constants.COUNTRY_RESIDENCE}
               imageSource={require('@/assets/images/Transaction/CountryUk.png')}
               value={form.countryResident}
